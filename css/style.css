@@ -495,25 +495,30 @@ img{
 }
 
 /* -----------------------vision-board-------------- */
+.vision-board{
+  margin-bottom: 72px;
+}
 .vision-board-list{
   display: flex;
   gap: 56px;
-}
-.vision-board{
-  margin-bottom: 72px;
 }
 .vision-board a{
   padding: 25px 60px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 300;
-  
 }
-.solutions h3{
+.vision-board .solutions{
+  width: 35%;
+}
+.vision-board .board-list{
+  width: 65%;
+}
+.vision-board .solutions h3{
   font-size: 35px;
   font-weight: 600;
 }
-.solutions p{
+.vision-board .solutions p{
   font-size: 18px;
   font-weight: 400;
   color: #737171;
@@ -523,28 +528,47 @@ img{
 .board-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 42px;
+  gap: 22px;
 }
 .board-list .box{
   box-shadow: 0px 6px 20px rgba(0,0,0,0.10) ;
   /* display: inline-block; */
   border-radius: 10px;
   max-width: 347px;
-  max-height: 309px;
+  /* max-height: 309px; */
   padding: 25px;
 }
-.box:nth-child(2){
+.board-list .box:nth-child(2){
   background-color: #D8222E;
 }
-.box h3{
+.board-list .box h3{
   font-size: 26px;
   font-weight: 600;
+  margin-top: 0;
 }
-.box li{
+.board-list .box ul{
+  margin: 0;
+  padding: 0;
+}
+.board-list .box li{
   font-size: 18px;
   font-weight: 400;
   list-style: none;
+  background-image: url("../image/bullet-points.png");
+  background-repeat: no-repeat;
+  background-size: 34px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 47px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  background-position-y: 3px;
+  /* display: block; */
 }
+.board-list .box li:last-child{
+  margin-bottom: 0;
+}
+
 .development h3,
 .development li{
   color: #fff;
@@ -555,4 +579,73 @@ img{
 }
 .services li{
   color: #737171;
+}
+
+
+/* ------------------work-board-------------------------- */
+.work-board{
+  background-color: #F5F5F5;
+  background-image: url("../image/Vector.png");
+  background-repeat: no-repeat;
+  /* padding-top: 17px; */
+  padding-bottom: 80px;
+  background-position: 0 15px;
+}
+.work-board .container{
+  position: relative;
+  padding-top: 215px;
+}
+.work-board .work-board-head{
+  max-width: 575px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.work-board .work-board-head h2{
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 28px;
+  /* margin-top: 85px; */
+  padding-top: 85px;
+}
+.work-board .work-board-head p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #737171;
+  margin: 0;
+}
+.work-board .work-board-list{
+  display: flex;
+  gap: 24px;
+}
+.work-board .work-board-list .work-list{
+  max-width: 282px;
+  /* max-height: 428px; */
+  height: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #343232;
+}
+.work-board .work-board-list .work-list:nth-child(2)
+{
+  background-color: #D8222E;
+  margin-top: 83px;
+}
+.work-board .work-board-list .work-list:nth-child(3)
+{
+  margin-top: 166px;
+}
+.work-board .work-board-list .work-list:last-child
+{
+  margin-top: 249px;
+}
+.work-board-list .work-list h3{
+  font-size: 26px;
+  font-weight: 600;
+}
+.work-board-list .work-list p{
+  font-size: 18px;
+  font-weight: 400;
 }
