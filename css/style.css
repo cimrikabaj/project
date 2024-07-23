@@ -693,18 +693,26 @@ img{
 .people-feedback .people-feedback-list .feedback-list{
   width: 50%;
 }
-.people-feedback-list .sucess h2{
+.people-feedback-list .sucess{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.people-feedback-list .sucess .dsc h2{
   font-size: 64px;
   font-weight: 500;
   margin-bottom: 0;
 }
-.people-feedback-list .sucess p{
+.people-feedback-list .sucess .dsc p{
   font-size: 18px;
   font-weight: 400;
   color: #737171;
+  
 }
 .people-feedback-list .sucess img{
   padding-top: 56px;
+  object-fit: contain;
+  display: block;
 }
 .feedback-list .feed{
   box-shadow: 0px 6px 20px rgba(0,0,0,0.10);
@@ -740,6 +748,9 @@ img{
   font-size: 18px;
   font-weight: 400;
   color: #737171;
+  line-height: 1.2;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 
@@ -817,6 +828,28 @@ input[type=text], select {
   /* max-width: 335px; */
 
 }
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #B6B3B3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* max-width: 335px; */
+
+}
+input[type=num], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #B6B3B3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* max-width: 335px; */
+
+}
 
 input[type=submit] {
   color: #fff;
@@ -828,7 +861,6 @@ input[type=submit] {
   padding: 24px 63px;
   border: none;
 }
-
 /* input[type=submit]:hover {
   background-color: #45a049;
 } */
