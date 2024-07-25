@@ -795,7 +795,7 @@ img{
   width: 37%;
 }
 .contact-us-list .info-collection {
-  width: 50%;
+  width: 63%;
 }
 
 .contact-us-list .contact-info h2{
@@ -882,3 +882,12 @@ label{
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.form .form-box label{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* select{
+  background-color:  var(--color-primary);
+} */
+
