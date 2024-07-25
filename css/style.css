@@ -802,7 +802,7 @@ img{
   font-size: 35px;
   font-weight: 600;
 }
-.contact-us-list .contact-info span{
+.contact-us-list .contact-info p{
   font-size: 18px;
   font-weight: 400;
   color: #737171;
@@ -811,12 +811,18 @@ img{
   font-size: 26px;
   font-weight: 600;
 }
-.contact-us-list .contact-info p{
+.contact-us-list .contact-info a{
   font-size: 18px;
   font-weight: 400;
   color: var(--color-primary);
   margin: 0;
+  text-decoration: none;
 }
+.contact-us-list .contact-info a:hover{
+  color: #171515;
+}
+
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -839,17 +845,7 @@ input[type=email], select {
   /* max-width: 335px; */
 
 }
-input[type=num], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #B6B3B3;
-  border-radius: 4px;
-  box-sizing: border-box;
-  /* max-width: 335px; */
 
-}
 
 input[type=submit] {
   color: #fff;
@@ -865,9 +861,9 @@ input[type=submit] {
   background-color: #45a049;
 } */
  .info-collection .form{
-  display: flex;
+  /* display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
  }
  .info-collection .form .mini-box{
   max-width: 335px;
@@ -875,4 +871,14 @@ input[type=submit] {
 label{
   font-size: 18px;
   font-weight: 400;
+}
+.msg input{
+  padding: 70px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.form .grid-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
