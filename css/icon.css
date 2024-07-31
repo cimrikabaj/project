@@ -51,4 +51,6 @@
 }
 .icon-bars:before {
   content: "\f0c9";
+  color: black;
 }
+

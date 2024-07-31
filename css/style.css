@@ -943,6 +943,16 @@ label{
   .top-section-list .nav-bar {
     width: 68%;
   }
+  .board-list .box li{
+    background-size: 32px;
+  }
+  
+}
+@media screen and (max-width:1094px) {
+  .board .hero img{
+    max-width: 600px;
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width:1077px) {
   .top-section-list .nav-bar {
@@ -963,6 +973,21 @@ label{
   .vision-board a{
     font-size: 16px;
   }
+}
+@media screen and (max-width:1038px) {
+/* ---------------------BOARD---------------------- */
+.board{
+  flex-direction: column;
+}
+.board .written-section{
+  text-align: center;
+}
+.written-section h1{
+  font-size: 58px;
+}
+.hero img{
+  display: none;
+}
 }
 
 @media screen and (max-width:897px) {
@@ -1004,13 +1029,21 @@ label{
     width: 100%;
   }
   .board-list{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
   }
   .board-list .box{
     justify-items: center;
     align-content: center;
     text-align: center;
+    max-width: none;
+
+  }
+  .vision-board .board-list {
+  width: 100%;
+  }
+  .board-list .box li{
+    background-size: 30px;
   }
 }
 @media screen and (max-width:800px) {
@@ -1042,6 +1075,10 @@ label{
     width: 0;
     
   }
+  .board-list{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
 }
 @media screen and (max-width:677px) {
   .top-section-list .primary-btn a{
@@ -1071,5 +1108,12 @@ label{
   }
   .expertise-area h2{
     font-size: 50px;
+  }
+  
+}
+@media screen and (max-width:553px) {
+  .board-list{
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
