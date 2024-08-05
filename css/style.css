@@ -488,6 +488,7 @@ img{
   margin-bottom: 117px;
 }
 
+
 /* -----------------expertise-area------------------- */
 .expertise-area h2{
   font-weight: 500;
@@ -680,6 +681,24 @@ img{
 }
 .board2 img{
   align-items: center;
+  display: flex;
+  justify-content: last baseline;
+}
+
+.board2 .frame{
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.board2 .frame p{
+  background-color: #171515;
+  color:#fff;
+  border-radius: 5px;
+  padding: 17px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 /* ------------------feedback--------------------------------- */
@@ -899,7 +918,7 @@ label{
 
 /* --------------------CSS responsive design-------------- */
 @media screen and (max-width:2560px) {
-  .nav-bar .display-on-mobile{
+  .display-on-mobile{
     display: none;
 }
 }
@@ -927,6 +946,8 @@ label{
     .mid-section .mid-section-list img{
       width: 25%;
       align-items: center;
+      height: 53px;
+      object-fit: contain;
     }
     .expertise-area{
       justify-content: center;
@@ -940,8 +961,22 @@ label{
     .work-board .work-board-head h2{
       font-size: 60px;
     }
+    .board2 h2{
+      font-size: 60px;
+    }
+    .people-feedback-list .sucess .dsc h2 {
+      font-size: 60px;
+    }
+    
 }
-
+@media screen and (max-width:1193px) {
+  .board2 img{
+    padding-top: 30px;
+  }
+  .footer .footer-list{
+    gap:205px;
+  }
+}
 @media screen and (max-width:1170px) {
   .top-section-list .nav-bar {
     width: 68%;
@@ -951,10 +986,31 @@ label{
   }
   
 }
+@media screen and (max-width:1161px) {
+.footer .footer-list{
+  gap:180px;
+}
+
+.footer p{
+  font-size: 13px; 
+}
+}
+@media screen and (max-width:1098px) {
+  .contact-us .contact-us-list {
+    gap: 80px;
+}
+  
+}
+
 @media screen and (max-width:1094px) {
   .board .hero img{
     max-width: 600px;
     margin-top: 120px;
+  }
+  .contact-us-list .contact-info p,
+  .contact-us-list .contact-info a,
+  .form .form-box label {
+    font-size: 16px;
   }
 }
 @media screen and (max-width:1077px) {
@@ -976,6 +1032,28 @@ label{
   .vision-board a{
     font-size: 16px;
   }
+  .work-board .work-board-list .work-list img{
+    width: 65px;
+    height: 65px;
+  }
+  .board-list .box li{
+    background-size: 35px;
+  }
+  .feed .user-info .personal-info h3 {
+    font-size: 18px;
+  }
+  .feed .user-info .personal-info p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:1057px) {
+.footer .footer-list{
+  gap:170px;
+}
+
+.footer p{
+  font-size: 12px; 
+}
 }
 @media screen and (max-width:1038px) {
 
@@ -999,6 +1077,12 @@ label{
   font-size: 52px;
 }
 .work-board .work-board-head h2{
+  font-size: 58px;
+}
+.board2 h2{
+  font-size: 58px;
+}
+.people-feedback-list .sucess .dsc h2 {
   font-size: 58px;
 }
 }
@@ -1027,6 +1111,35 @@ label{
   }
   .work-board-list .work-list h3 {
     font-size: 22px;
+  }
+  .board2 h2{
+    font-size: 54px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 54px;
+  }
+  .people-feedback-list .sucess .dsc p {
+    font-size: 16px;
+  }
+  .feedback-list .feed .review {
+    font-size: 16px;
+  }
+  .mid-section{
+    margin-bottom: 70px;
+}
+.footer .footer-list{
+  gap:160px;
+}
+
+.footer p{
+  font-size: 11px; 
+}
+}
+@media screen and (max-width:985px) {
+.contact-us-list .contact-info p,
+  .contact-us-list .contact-info a,
+  .form .form-box label {
+    font-size: 14px;
   }
 }
 @media screen and (max-width:920px) {
@@ -1112,13 +1225,122 @@ label{
   .work-board-list .work-list p{
     font-size: 14px;
   }
+  .work-board .work-board-list{
+    flex-wrap: wrap;
+  }
+  .work-board .work-board-list .work-list{
+    max-width: none;
+    width: 48%;
+    margin-top: 0;
+  }
+  .work-board .work-board-list .work-list:nth-child(2)
+{
+  margin-top: 0;
 }
+.work-board .work-board-list .work-list:nth-child(3)
+{
+  margin-top: 0;
+}
+.work-board .work-board-list .work-list:last-child
+{
+  margin-top: 0;
+}
+.work-board .work-board-head{
+  top: 0;
+  left: 35px;
+  max-width: none;
+}
+.work-board .work-board-list{
+  margin-top: -32px;
+}
+.work-board .work-board-head h2{
+  padding-top: 36px;
+  display: block;
+  margin-bottom: 25px;
+}
+.work-board .work-board-list .work-list{
+  height: 260px;
+}
+.board2 h2{
+  font-size: 52px;
+}
+.people-feedback-list .sucess .dsc h2 {
+  font-size: 52px;
+}
+.people-feedback-list .sucess .dsc p {
+  font-size: 14px;
+}
+.feed .user-info .personal-info h3 {
+  font-size: 16px;
+}
+.feed .user-info .personal-info p {
+  font-size: 14px;
+}
+.feedback-list .feed .review {
+  font-size: 14px;
+}
+.people-feedback-list .sucess .dsc{
+  text-align: center;
+  padding-left: 10px;
+}
+.people-feedback-list .sucess img{
+  width: 348px;
+  height: 245px;
+  padding-top: 0;
+  padding-right: 60px;
+}
+.people-feedback .people-feedback-list{
+  flex-direction: column;
+}
+.people-feedback .people-feedback-list .sucess{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.people-feedback .people-feedback-list .feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.people-feedback .people-feedback-list .feedback-list .feed{
+  width: 45%;
+  margin-bottom: 0;
+}
+.contact-us .contact-us-list {
+  gap: 70px;
+}
+.people-feedback .people-feedback-list{
+  margin-bottom: 40px;
+}
+  }
+  @media screen and (max-width:871px) {
+    .contact-us .contact-us-list {
+      gap: 50px;
+    }
+  }
+  @media screen and (max-width:851px) {
+    .contact-us .contact-us-list {
+      gap: 30px;
+    }
+  }
+  @media screen and (max-width:831px) {
+    .contact-us .contact-us-list {
+      gap: 1px;
+    }
+  }
+
 @media screen and (max-width:800px) {
   .nav-bar .display-on-pc{
     display: none;
   }
-  .top-section-list .display-on-pc{
+  .display-on-pc{
     display: none;
+  }
+  .board2 .display-on-mobile{
+    display: block;
   }
   .nav-bar .display-on-mobile{
     display: block;
@@ -1162,11 +1384,18 @@ label{
   .work-board .work-board-head h2{
     font-size: 50px;
   }
+  .board2 h2{
+    font-size: 50px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 50px;
+  }
 }
 @media screen and (max-width:870px) {
   .top-section{
     max-height: 950px;
   }
+
 }
 @media screen and (max-width:780px) {
   .board .hero img{
@@ -1191,7 +1420,15 @@ label{
   .work-board .work-board-head h2{
     font-size: 48px;
   }
-  
+  .board2 h2{
+    font-size: 48px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 48px;
+  }
+  .people-feedback .people-feedback-list .feedback-list {
+    gap: 30px;
+  }
 }
 @media screen and (max-width:715px) {
   .board .hero img{
@@ -1209,6 +1446,21 @@ label{
   }
   .work-board .work-board-head h2{
     font-size: 47px;
+  }
+  .board2 h2{
+    font-size: 47px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 47px;
+  }
+  .people-feedback .people-feedback-list .feedback-list {
+    gap: 25px;
+  }
+  .people-feedback-list .sucess img {
+    padding-right: 45px;
+  }
+  .mid-section-list {
+    gap: 50px;
   }
 }
 @media screen and (max-width:691px) {
@@ -1229,6 +1481,17 @@ label{
   }
   .work-board .work-board-head h2{
     font-size: 46px;
+  }
+  .board2 h2{
+    font-size: 46px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width:688px){
+  .work-board .work-board-list .work-list{
+    height: 287px;
   }
 }
 @media screen and (max-width:677px) {
@@ -1260,10 +1523,41 @@ label{
 .work-board .work-board-head h2{
   font-size: 45px;
 }
+.board2 h2{
+  font-size: 45px;
+}
+.people-feedback-list .sucess .dsc h2 {
+  font-size: 45px;
+}
+}
+@media screen and (max-width:667px) {
+  .people-feedback .people-feedback-list .feedback-list .feed{
+    width: 100%;
+  }
+  .people-feedback .people-feedback-list {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width:640px) {
+  .work-board .work-board-list .work-list{
+    width: 47%;
+    height: 287px;
+  }
 }
 @media screen and (max-width:639px) {
   .top-section{
     max-height: 855px;
+  }
+  
+}
+@media screen and (max-width:616px) {
+  .work-board .work-board-list{
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width:600px) {
+  .board2 .frame{
+    gap: 10px;
   }
 }
 @media screen and (max-width:595px) {
@@ -1283,6 +1577,54 @@ label{
   .work-board .work-board-head h2{
     font-size: 44px;
   }
+  .work-board .work-board-list .work-list{
+    height: 293px;
+  }
+  .board2 h2{
+    font-size: 44px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 44px;
+  }
+  .mid-section{
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+  }
+}
+@media screen and (max-width:579px) {
+  .people-feedback-list .sucess img {
+    height: 335px;
+    width: 235px;
+    padding-top: 9px;
+  }
+  .people-feedback .people-feedback-list{
+    margin-left: 0;
+  }
+  .people-feedback-list .sucess .dsc{
+    width: 40%;
+    margin-top: 50px;
+  }
+  .people-feedback .people-feedback-list {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width:573px) {
+  .people-feedback-list .sucess img {
+
+    padding-top: 9px;
+  }
+}
+@media screen and (max-width:570px) {
+  .board2 .frame{
+    gap: 5px;
+  }
+  .board2 .frame p{
+    padding: 15px;
+  }
+  .work-board .work-board-list .work-list{
+    height: 305px;
+  }
 }
 @media screen and (max-width:553px) {
   .board-list{
@@ -1298,6 +1640,18 @@ label{
   .work-board .work-board-head h2{
     font-size: 43px;
   }
+  .work-board .work-board-list .work-list{
+    height: 292px;
+  }
+  .work-board .work-board-list .work-list{
+    height: 320px;
+  }
+  .board2 h2{
+    font-size: 43px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 43px;
+  }
 }
 @media screen and (max-width:545px) {
   .board .hero img{
@@ -1310,6 +1664,7 @@ label{
     max-height: 745px;
   }
 }
+
 @media screen and (max-width:528px) {
   .top-section-list .primary-btn a{
     margin-right: 10px;
@@ -1321,6 +1676,7 @@ label{
   .mid-section .mid-section-list img{
     width: 50%;
     align-items: center;
+    
   }
   .board .hero img{
     /* margin-top: 46px; */
@@ -1337,6 +1693,25 @@ label{
   }
   .work-board .work-board-head h2{
     font-size: 42px;
+  }
+  .board2 h2{
+    font-size: 42px;
+  }
+  .people-feedback-list .sucess .dsc h2 {
+    font-size: 42px;
+  }
+  .mid-section-list {
+    gap: 40px;
+  }
+}
+@media screen and (max-width:520px) {
+  .board2 .frame{
+    gap: 5px;
+    
+  }
+  .board2 .frame p{
+    padding: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width:515px) {
