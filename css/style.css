@@ -395,7 +395,7 @@ img{
     padding-top: 37px;
     background-color: #F5F5F5;
     background-size: cover;
-    max-height: 768px;
+    /* max-height: 768px; */
 }
 .top-section-list{
     display: flex;
@@ -942,11 +942,14 @@ label{
 }
 @media screen and (max-width:1261px) {
   .board .written-section{
-    max-width: none;
+    max-width: 588px;
    }
    .container{
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .board .hero img{
+    margin-top: 60px;
   }
 }
 @media screen and (max-width:1210px) {
@@ -999,6 +1002,12 @@ label{
   .footer .footer-list{
     gap:205px;
   }
+  .board .hero img{
+    max-width: 543px;
+  }
+  .board .written-section {
+    max-width: 540px;
+}
 }
 @media screen and (max-width:1170px) {
   .top-section-list .nav-bar {
@@ -1022,17 +1031,22 @@ label{
   .contact-us .contact-us-list {
     gap: 80px;
 }
+.board .hero img{
+  max-width: 531px;
+}
+.board .written-section {
+  max-width: 540px;
+}
   
 }
 
 @media screen and (max-width:1094px) {
-  .board .hero img{
-    max-width: 600px;
-    margin-top: 120px;
-  }
   .contact-us-list .contact-info p,
   .contact-us-list .contact-info a,
   .form .form-box label {
+    font-size: 16px;
+  }
+  label{
     font-size: 16px;
   }
 }
@@ -1070,6 +1084,9 @@ label{
   }
   .board-list .box li {
     background-size: 30px;
+}
+input[type=submit] {
+  font-size: 16px;
 }
 }
 @media screen and (max-width:1057px) {
@@ -1165,6 +1182,9 @@ label{
 .contact-us-list .contact-info p,
   .contact-us-list .contact-info a,
   .form .form-box label {
+    font-size: 14px;
+  }
+  label{
     font-size: 14px;
   }
 }
@@ -1354,6 +1374,9 @@ label{
 }
 .people-feedback .people-feedback-list{
   margin-bottom: 40px;
+}
+input[type=submit] {
+  font-size: 14px;
 }
   }
   @media screen and (max-width:871px) {
@@ -1592,6 +1615,9 @@ label{
 .people-feedback-list .sucess .dsc h2 {
   font-size: 45px;
 }
+.footer .footer-list {
+  gap: 150px;
+}
 }
 @media screen and (max-width:667px) {
   .people-feedback .people-feedback-list .feedback-list .feed{
@@ -1603,22 +1629,33 @@ label{
   .contact-us{
     margin-top: 154px;
   }
+  .footer .footer-list {
+    gap: 140px;
+}
 }
 @media screen and (max-width:640px) {
   .work-board .work-board-list .work-list{
     width: 47%;
   }
+  .footer .footer-list {
+    gap: 130px;
+}
 }
 @media screen and (max-width:639px) {
   .top-section{
     max-height: 855px;
   }
-  
+  .footer .footer-list {
+    gap: 120px;
+}
 }
 @media screen and (max-width:616px) {
   .work-board .work-board-list{
     margin-top: 32px;
   }
+  .footer .footer-list {
+    gap: 110px;
+}
 }
 /* @media screen and (max-width:600px) {
   .board2 .frame{
@@ -1652,8 +1689,14 @@ label{
     margin-top: 60px;
     margin-bottom: 70px;
 }
-  }
+.footer .footer-list {
+  gap: 100px;
 }
+.footer p {
+  font-size: 10px;
+}
+  }
+
 @media screen and (max-width:579px) {
   .people-feedback-list .sucess img {
     height: 335px;
@@ -1670,12 +1713,21 @@ label{
   .people-feedback .people-feedback-list {
     margin-top: 20px;
   }
+  .footer .footer-list {
+    gap: 90px;
+}
+.contact-us {
+  margin-top: 245px;
+}
 }
 @media screen and (max-width:573px) {
   .people-feedback-list .sucess img {
 
     padding-top: 9px;
   }
+  .footer .footer-list {
+    gap: 80px;
+}
 }
 @media screen and (max-width:570px) {
   /* .board2 .frame{
@@ -1705,6 +1757,9 @@ label{
   .people-feedback-list .sucess .dsc h2 {
     font-size: 43px;
   }
+  .footer .footer-list {
+    gap: 70px;
+}
 }
 @media screen and (max-width:545px) {
   .board .hero img{
@@ -1716,6 +1771,9 @@ label{
   .top-section{
     max-height: 745px;
   }
+  .footer .footer-list {
+    gap: 60px;
+}
 }
 
 @media screen and (max-width:528px) {
@@ -1756,6 +1814,9 @@ label{
   .mid-section-list {
     gap: 40px;
   }
+  .footer .footer-list {
+    gap: 50px;
+}
 }
 @media screen and (max-width:520px) {
   /* .board2 .frame{
@@ -1766,6 +1827,13 @@ label{
     padding: 13px;
     font-size: 12px;
   }
+  .contact-us-list .contact-info p, .contact-us-list .contact-info a, .form .form-box label {
+    font-size: 13px;
+}
+  label{
+    font-size: 13px;
+  }
+
 }
 @media screen and (max-width:515px) {
   .top-section{
@@ -1781,6 +1849,10 @@ label{
 .vision-board a {
   padding: 15px 40px;
 font-size: 12px;
+}
+input[type=submit] {
+  padding: 15px 40px;
+  font-size: 12px;
 }
 .vision-board .solutions p {
   margin-bottom: 40px;
@@ -1806,43 +1878,91 @@ font-size: 12px;
 .people-feedback .people-feedback-list .feedback-list {
   padding-bottom: 50px;
 }
+.footer p {
+  font-size: 9px;
 }
+.contact-us {
+  margin-top: 535px;
+}
+}
+@media screen and (max-width:488px) {
+  .info-collection .form .form-box{
+    width: 100%;
+  }
+  .form .grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+
 @media screen and (max-width:464px) {
     .vision-board .vision-board-list .solutions .vision-img {
       margin-right: 0;
-  }
-  .contact-us {
-    margin-top: 351px;
   }
   }
   @media screen and (max-width:464px) {
     .vision-board .vision-board-list .solutions .vision-img {
       margin-right: 20px;
   }
+  .contact-us{
+    margin-top: 560px;
+  }
+  }
+  @media screen and (max-width:456px) {
+    .contact-us{
+      margin-top: 610px;
+    }
   }
   @media screen and (max-width:440px) {
     .work-board .work-board-list .work-list {
       width: 100%;
   }
+  .footer p {
+    font-size: 8px;
+}
+}
   @media screen and (max-width:400px) {
     .vision-board .vision-board-list .solutions {
       flex-direction:column;
   }
+  .contact-us .contact-us-list .contact-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contact-us .contact-us-list .contact-info .first-info {
+    width: 100%;
+    
+}
+  }
+  @media screen and (max-width:397px) {
+  .contact-us{
+    margin-top: 650px;
   }
 }
+
 @media screen and (max-width:379px) {
-  .contact-us {
+  /* .contact-us {
   margin-top: 388px;
-  }
+  } */
 }
 @media screen and (max-width:375px) {
   .work-board .container {
     padding-top: 260px;
   }
+  .contact-us{
+    margin-top: 690px;
+  }
 }
-@media screen and (max-width:350px) {
-  .contact-us {
-  margin-top: 400px;
+@media screen and (max-width:330px) {
+  .contact-us{
+    margin-top: 720px;
+  }
+}
+@media screen and (max-width:321px) {
+  .contact-us{
+    margin-top: 817px;
   }
 }
 @media screen and (min-width:898px) {
@@ -1850,3 +1970,11 @@ font-size: 12px;
   height: 100%;
 }
 }
+@media screen and (min-width:1260px) {
+  .board .hero img{
+    max-width: 632px;
+    max-height:537px;
+    margin-top: 89px;
+  }
+  
+  }
