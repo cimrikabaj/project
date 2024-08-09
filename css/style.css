@@ -384,6 +384,7 @@ img{
   font-size: 18px;
   font-weight: 300;
   box-shadow: 0px 6px 20px rgba(0,0,0,0.25) ;
+  transition: all 0.25s ease-in-out;
 }
 
 .round-btn:hover{
@@ -1864,9 +1865,6 @@ input[type=submit] {
 .vision-board .vision-board-list .solutions .vision-img {
   margin-bottom: 20px;
 }
-.contact-us {
-  margin-top: 321px;
-}
 .people-feedback .people-feedback-list .feedback-list {
   padding-bottom: 50px;
 }
@@ -1874,7 +1872,10 @@ input[type=submit] {
   font-size: 9px;
 }
 .contact-us {
-  margin-top: 535px;
+  margin-top: 480px;
+}
+.people-feedback-list .sucess .dsc {
+  width: 100%;
 }
 }
 @media screen and (max-width:488px) {
@@ -1899,12 +1900,12 @@ input[type=submit] {
       margin-right: 20px;
   }
   .contact-us{
-    margin-top: 560px;
+    margin-top: 504px;
   }
   }
   @media screen and (max-width:456px) {
     .contact-us{
-      margin-top: 610px;
+      margin-top: 503px;
     }
   }
   @media screen and (max-width:440px) {
@@ -1942,7 +1943,7 @@ input[type=submit] {
   }
   @media screen and (max-width:397px) {
   .contact-us{
-    margin-top: 650px;
+    margin-top: 537px;
   }
 }
 
@@ -1959,11 +1960,17 @@ input[type=submit] {
     padding-top: 260px;
   }
   .contact-us{
-    margin-top: 690px;
+    margin-top: 568px;
   }
   .board .hero img {
     max-width: 275px;
   }
+}
+@media screen and (max-width:345px) {
+  .contact-us{
+    margin-top: 616px;
+  }
+
 }
 @media screen and (max-width:330px) {
   .contact-us{
@@ -1975,7 +1982,7 @@ input[type=submit] {
 }
 @media screen and (max-width:321px) {
   .contact-us{
-    margin-top: 817px;
+    margin-top: 757px;
   }
   .board .hero img {
     max-width: 260px;
