@@ -404,6 +404,13 @@ img{
     align-items: center;
     gap: 40px;
 }
+/* .top-section-list{
+  position: fixed;
+  top: 0;
+  width: 80%;
+  z-index: 9999;
+  background-color: #F5F5F5;
+} */
 .nav-bar ul{
     display: flex;
     list-style: none;
@@ -440,7 +447,9 @@ img{
     margin: 0;
     display: block;
 }
-
+.icon-bars:hover:before {
+  color: #D8222E;
+}
 /* ---------------------BOARD---------------------- */
 .board{
   display: flex;
