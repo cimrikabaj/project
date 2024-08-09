@@ -1027,16 +1027,25 @@ label{
   font-size: 13px; 
 }
 }
+@media screen and (max-width:1115px) {
+  .board .hero img {
+    max-width: 534px;
+}
+.board .written-section {
+  max-width: none;
+}
+}
+@media screen and (max-width:1106px) {
+  .board .hero img {
+    max-width: 510px;
+}
+}
 @media screen and (max-width:1098px) {
   .contact-us .contact-us-list {
     gap: 80px;
 }
-.board .hero img{
-  max-width: 531px;
-}
-.board .written-section {
-  max-width: 540px;
-}
+
+
   
 }
 
@@ -1089,6 +1098,26 @@ input[type=submit] {
   font-size: 16px;
 }
 }
+
+@media screen and (max-width:1082px) {
+  .board .hero img {
+    margin-top: 82px;
+    max-width: 495px;
+}
+}
+@media screen and (max-width:1067px) {
+  .board .hero img {
+    margin-top: 82px;
+    max-width: 490px;
+}
+}
+@media screen and (max-width:1062px) {
+  .board .hero img {
+    margin-top: 100px;
+    max-width: 480px;
+}
+}
+
 @media screen and (max-width:1057px) {
 .footer .footer-list{
   gap:170px;
@@ -1096,6 +1125,18 @@ input[type=submit] {
 
 .footer p{
   font-size: 12px; 
+}
+}
+@media screen and (max-width:1052px) {
+  .board .hero img {
+    margin-top: 100px;
+    max-width: 470px;
+}
+}
+@media screen and (max-width:1042px) {
+  .board .hero img {
+    margin-top: 100px;
+    max-width: 460px;
 }
 }
 @media screen and (max-width:1038px) {
@@ -1112,10 +1153,6 @@ input[type=submit] {
 .top-section{
   max-height: 980px;
 }
-.board .hero img{
-  margin-top: 46px;
-  margin-left: 195px;
-}
 .expertise-area h2{
   font-size: 52px;
 }
@@ -1128,15 +1165,14 @@ input[type=submit] {
 .people-feedback-list .sucess .dsc h2 {
   font-size: 58px;
 }
+.board .hero img{
+  margin-bottom: 10px;
+}
 }
 @media screen and (max-width:990px) {
   .top-section{
     max-height: 965px;
   }
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 170px;
-  }  
   .written-section h1{
     font-size: 54px;
   }
@@ -1265,11 +1301,7 @@ input[type=submit] {
   }
   .board-list .box li{
     background-size: 30px;
-  }
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 140px;
-  }  
+  } 
   .written-section h1{
     font-size: 52px;
   }
@@ -1456,10 +1488,6 @@ input[type=submit] {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
   }
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 120px;
-  } 
   .written-section h1{
     font-size: 50px;
   } 
@@ -1486,10 +1514,6 @@ input[type=submit] {
 
 }
 @media screen and (max-width:780px) {
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 70px;
-  }  
   .written-section h1{
     font-size: 48px;
   }
@@ -1519,10 +1543,6 @@ input[type=submit] {
   }
 }
 @media screen and (max-width:715px) {
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 50px;
-  }  
   .written-section h1{
     font-size: 47px;
   }
@@ -1552,12 +1572,6 @@ input[type=submit] {
   }
 }
 @media screen and (max-width:691px) {
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 80px;
-    max-width: 519px;
-    max-height:389px;
-  } 
   .written-section h1{
     font-size: 46px;
   }
@@ -1576,6 +1590,9 @@ input[type=submit] {
   .people-feedback-list .sucess .dsc h2 {
     font-size: 46px;
   }
+  .board .hero img {
+    max-width: 411px;
+}
 }
 @media screen and (max-width:688px){
 
@@ -1593,10 +1610,6 @@ input[type=submit] {
 .expertise-area h2{
   font-size: 54px;
 }
-.board .hero img{
-  /* margin-top: 46px; */
-  margin-left: 70px;
-} 
 .written-section h1{
   font-size: 45px;
 }
@@ -1657,16 +1670,8 @@ input[type=submit] {
     gap: 110px;
 }
 }
-/* @media screen and (max-width:600px) {
-  .board2 .frame{
-    gap: 10px;
-  }
-} */
+
 @media screen and (max-width:595px) {
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 20px;
-  } 
   .written-section h1{
     font-size: 44px;
   }
@@ -1730,9 +1735,6 @@ input[type=submit] {
 }
 }
 @media screen and (max-width:570px) {
-  /* .board2 .frame{
-    gap: 5px;
-  } */
   .board2 .frame p{
     padding: 15px;
   }
@@ -1762,17 +1764,15 @@ input[type=submit] {
 }
 }
 @media screen and (max-width:545px) {
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 80px;
-    max-width: 358px;
-    max-height:288px;
-  } 
   .top-section{
     max-height: 745px;
   }
   .footer .footer-list {
     gap: 60px;
+}
+.board .hero img {
+  max-width: 332px;
+  margin-top: 68px;
 }
 }
 
@@ -1789,10 +1789,6 @@ input[type=submit] {
     align-items: center;
     
   }
-  .board .hero img{
-    /* margin-top: 46px; */
-    margin-left: 60px;
-  } 
   .written-section h1{
     font-size: 42px;
   }
@@ -1819,10 +1815,6 @@ input[type=submit] {
 }
 }
 @media screen and (max-width:520px) {
-  /* .board2 .frame{
-    gap: 5px;
-    
-  } */
   .board2 .frame p{
     padding: 13px;
     font-size: 12px;
@@ -1923,6 +1915,15 @@ input[type=submit] {
     font-size: 8px;
 }
 }
+@media screen and (max-width:413px) {
+  .board .hero img {
+    max-width: 301px;
+    margin-top: 68px;
+}
+.board{
+  margin-top: 40px;
+}
+}
   @media screen and (max-width:400px) {
     .vision-board .vision-board-list .solutions {
       flex-direction:column;
@@ -1935,6 +1936,9 @@ input[type=submit] {
     width: 100%;
     
 }
+.board .hero img {
+  max-width: 295px;
+}
   }
   @media screen and (max-width:397px) {
   .contact-us{
@@ -1946,6 +1950,9 @@ input[type=submit] {
   /* .contact-us {
   margin-top: 388px;
   } */
+  .board .hero img {
+    max-width: 280px;
+  }
 }
 @media screen and (max-width:375px) {
   .work-board .container {
@@ -1954,15 +1961,24 @@ input[type=submit] {
   .contact-us{
     margin-top: 690px;
   }
+  .board .hero img {
+    max-width: 275px;
+  }
 }
 @media screen and (max-width:330px) {
   .contact-us{
     margin-top: 720px;
   }
+  .board .hero img {
+    max-width: 270px;
+  }
 }
 @media screen and (max-width:321px) {
   .contact-us{
     margin-top: 817px;
+  }
+  .board .hero img {
+    max-width: 260px;
   }
 }
 @media screen and (min-width:898px) {
@@ -1974,7 +1990,7 @@ input[type=submit] {
   .board .hero img{
     max-width: 632px;
     max-height:537px;
-    margin-top: 89px;
+    margin-top: 45px;
   }
   
   }
