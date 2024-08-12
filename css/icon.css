@@ -52,5 +52,6 @@
 .icon-bars:before {
   content: "\f0c9";
   color: black;
+  font-size: 35px;
 }
 
