@@ -22,6 +22,8 @@
    html {
       line-height: 1.15; /* 1 */
       -webkit-text-size-adjust: 100%; /* 2 */
+      scroll-behavior: smooth;
+ 
     }
     
     /* Sections
@@ -392,11 +394,16 @@ img{
   background-color: #171515;
 }
 
+.display-on-mobile{
+  display: none;
+}
+
 /* ---------------top-section-------------------------------- */
 .top-section{
     padding-top: 37px;
     background-color: #F5F5F5;
     background-size: cover;
+    background-size: contain;
     /* max-height: 768px; */
 }
 .top-section-list{
@@ -451,11 +458,17 @@ img{
 .icon-bars:hover:before {
   color: #D8222E;
 }
+.nav-bar li a{
+  font-size: 18px;
+  font-weight: 500;
+}
 /* ---------------------BOARD---------------------- */
 .board{
   display: flex;
   position: relative;
   margin-top: 95px;
+  background-color: #F5F5F5;
+  background-size: contain;
 }
 
 .written-section h1{
@@ -531,7 +544,7 @@ span{
   display: flex;
   gap: 56px;
 }
-.vision-board a{
+.vision-dsc a{
   padding: 25px 60px;
   text-decoration: none;
   font-size: 18px;
@@ -608,7 +621,7 @@ span{
 .vision-board-list .board-list .box li{
   color: #343232;
 }
-.board-list .box li:hover{
+.board-list .box:hover li{
   background-image: url("../image/bullet-points-hover.png");
   color: #fff;
 }
@@ -674,6 +687,7 @@ span{
 .work-board .work-board-list .work-list:last-child
 {
   margin-top: 249px;
+  background-color: var(--color-primary);
 }
 .work-board-list .work-list h3{
   font-size: 26px;
@@ -870,7 +884,7 @@ height: 24px;}
   text-decoration: none;
 }
 .contact-us-list .contact-info a:hover{
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 
@@ -907,6 +921,7 @@ input[type=submit] {
   box-shadow: 0px 6px 20px rgba(0,0,0,0.25) ;
   padding: 24px 63px;
   border: none;
+  cursor: pointer;
 }
 /* input[type=submit]:hover {
   background-color: #45a049;
@@ -956,18 +971,15 @@ label{
 
 
 /* --------------------CSS responsive design-------------- */
-@media screen and (max-width:2560px) {
-  .display-on-mobile{
-    display: none;
-}
-}
+
+
 @media screen and (max-width:1261px) {
   .board .written-section{
     max-width: 588px;
    }
    .container{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .board .hero img{
     margin-top: 60px;
@@ -1037,38 +1049,24 @@ label{
   .board-list .box li{
     background-size: 32px;
   }
+  .footer .footer-list{
+    gap:180px;
+  }
   
-}
-@media screen and (max-width:1161px) {
-.footer .footer-list{
-  gap:180px;
+  .footer p{
+    font-size: 13px; 
+  }
 }
 
-.footer p{
-  font-size: 13px; 
-}
-}
 @media screen and (max-width:1115px) {
   .board .hero img {
-    max-width: 534px;
+    max-width: 515px;
 }
 .board .written-section {
   max-width: none;
 }
 }
-@media screen and (max-width:1106px) {
-  .board .hero img {
-    max-width: 510px;
-}
-}
-@media screen and (max-width:1098px) {
-  .contact-us .contact-us-list {
-    gap: 80px;
-}
 
-
-  
-}
 
 @media screen and (max-width:1094px) {
   .contact-us-list .contact-info p,
@@ -1079,6 +1077,13 @@ label{
   label{
     font-size: 16px;
   }
+  .contact-us .contact-us-list {
+    gap: 80px;
+}
+.board .hero img {
+  margin-top: 82px;
+  max-width: 495px;
+}
 }
 @media screen and (max-width:1077px) {
   .top-section-list .nav-bar {
@@ -1120,26 +1125,11 @@ input[type=submit] {
 }
 }
 
-@media screen and (max-width:1082px) {
-  .board .hero img {
-    margin-top: 82px;
-    max-width: 495px;
-}
-}
 @media screen and (max-width:1067px) {
-  .board .hero img {
-    margin-top: 82px;
-    max-width: 490px;
-}
-}
-@media screen and (max-width:1062px) {
   .board .hero img {
     margin-top: 100px;
     max-width: 480px;
 }
-}
-
-@media screen and (max-width:1057px) {
 .footer .footer-list{
   gap:170px;
 }
@@ -1148,18 +1138,7 @@ input[type=submit] {
   font-size: 12px; 
 }
 }
-@media screen and (max-width:1052px) {
-  .board .hero img {
-    margin-top: 100px;
-    max-width: 470px;
-}
-}
-@media screen and (max-width:1042px) {
-  .board .hero img {
-    margin-top: 100px;
-    max-width: 460px;
-}
-}
+
 @media screen and (max-width:1038px) {
 
 .board{
@@ -1167,9 +1146,6 @@ input[type=submit] {
 }
 .board .written-section{
   text-align: center;
-}
-.written-section h1{
-  font-size: 58px;
 }
 .top-section{
   max-height: 980px;
@@ -1193,9 +1169,6 @@ input[type=submit] {
 @media screen and (max-width:990px) {
   .top-section{
     max-height: 965px;
-  }
-  .written-section h1{
-    font-size: 54px;
   }
   .expertise-area h2{
     font-size: 54px;
@@ -1234,8 +1207,6 @@ input[type=submit] {
 .footer p{
   font-size: 11px; 
 }
-}
-@media screen and (max-width:985px) {
 .contact-us-list .contact-info p,
   .contact-us-list .contact-info a,
   .form .form-box label {
@@ -1245,11 +1216,7 @@ input[type=submit] {
     font-size: 14px;
   }
 }
-@media screen and (max-width:920px) {
-  .top-section{
-    max-height: 960px;
-  }
-}
+
 
 @media screen and (max-width:898px) {
   .top-section-list .nav-bar {
@@ -1323,9 +1290,6 @@ input[type=submit] {
   .board-list .box li{
     background-size: 30px;
   } 
-  .written-section h1{
-    font-size: 52px;
-  }
   .top-section{
     max-height: 955px;
   }
@@ -1423,7 +1387,7 @@ input[type=submit] {
   margin-bottom: 0;
 }
 .contact-us .contact-us-list {
-  gap: 70px;
+  gap: 20px;
 }
 .people-feedback .people-feedback-list{
   margin-bottom: 40px;
@@ -1431,22 +1395,8 @@ input[type=submit] {
 input[type=submit] {
   font-size: 14px;
 }
-  }
-  @media screen and (max-width:871px) {
-    .contact-us .contact-us-list {
-      gap: 50px;
-    }
-  }
-  @media screen and (max-width:851px) {
-    .contact-us .contact-us-list {
-      gap: 30px;
-    }
-  }
-  @media screen and (max-width:831px) {
-    .contact-us .contact-us-list {
-      gap: 1px;
-    }
-  }
+}
+
   @media screen and (max-width:802px) {
     .contact-us .contact-us-list{
       display: flex;
@@ -1470,64 +1420,59 @@ input[type=submit] {
       font-weight: 600;
       margin-bottom: 10px;
     }
+    .nav-bar .display-on-pc{
+      display: none;
+    }
+    .display-on-pc{
+      display: none;
+    }
+    .board2 .display-on-mobile{
+      display: block;
+    }
+    .nav-bar .display-on-mobile{
+      display: block;
+      display: flex;
+      justify-content: flex-end;
+      text-align: center;
+    }
+    .top-section-list .nav-bar {
+      width: 72%;
+    }
+    .round-btn {
+      font-size: 14px;
+      }
+      .top-section-list .logo a{
+        padding-left: 5px;
+      }
+      .top-section-list .logo{
+        width: 15%;
+    }
+    .top-section-list .primary-btn{
+      width: 0;
+      
+    }
+    .board-list{
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+    }
+    .expertise-area h2{
+      font-size: 50px;
+    }
+    .top-section{
+      max-height: 955px;
+    }
+    .work-board .work-board-head h2{
+      font-size: 50px;
+    }
+    .board2 h2{
+      font-size: 50px;
+    }
+    .people-feedback-list .sucess .dsc h2 {
+      font-size: 50px;
+    }
   }
 
 
-@media screen and (max-width:800px) {
-  .nav-bar .display-on-pc{
-    display: none;
-  }
-  .display-on-pc{
-    display: none;
-  }
-  .board2 .display-on-mobile{
-    display: block;
-  }
-  .nav-bar .display-on-mobile{
-    display: block;
-    display: flex;
-    justify-content: flex-end;
-    text-align: center;
-  }
-  .top-section-list .nav-bar {
-    width: 72%;
-  }
-  .round-btn {
-    font-size: 14px;
-    }
-    .top-section-list .logo a{
-      padding-left: 5px;
-    }
-    .top-section-list .logo{
-      width: 15%;
-  }
-  .top-section-list .primary-btn{
-    width: 0;
-    
-  }
-  .board-list{
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  .written-section h1{
-    font-size: 50px;
-  } 
-  .expertise-area h2{
-    font-size: 50px;
-  }
-  .top-section{
-    max-height: 955px;
-  }
-  .work-board .work-board-head h2{
-    font-size: 50px;
-  }
-  .board2 h2{
-    font-size: 50px;
-  }
-  .people-feedback-list .sucess .dsc h2 {
-    font-size: 50px;
-  }
-}
 @media screen and (max-width:870px) {
   .top-section{
     max-height: 950px;
@@ -1536,7 +1481,7 @@ input[type=submit] {
 }
 @media screen and (max-width:780px) {
   .written-section h1{
-    font-size: 48px;
+    font-size: 58px;
   }
   .written-section p{
     font-size: 14px;
@@ -1564,9 +1509,6 @@ input[type=submit] {
   }
 }
 @media screen and (max-width:715px) {
-  .written-section h1{
-    font-size: 47px;
-  }
   .expertise-area h2{
     font-size: 47px;
   }
@@ -1593,9 +1535,6 @@ input[type=submit] {
   }
 }
 @media screen and (max-width:691px) {
-  .written-section h1{
-    font-size: 46px;
-  }
   .expertise-area h2{
     font-size: 46px;
   }
@@ -1615,9 +1554,7 @@ input[type=submit] {
     max-width: 411px;
 }
 }
-@media screen and (max-width:688px){
 
-}
 @media screen and (max-width:677px) {
   .top-section-list .primary-btn a{
     margin-right: 5px;
@@ -1632,7 +1569,7 @@ input[type=submit] {
   font-size: 54px;
 }
 .written-section h1{
-  font-size: 45px;
+  font-size: 50px;
 }
 .expertise-area h2{
   font-size: 45px;
@@ -1689,6 +1626,10 @@ input[type=submit] {
   }
   .footer .footer-list {
     gap: 110px;
+}
+.vision-board .vision-board-list .solutions {
+  flex-direction: column;
+  gap: 15px;
 }
 }
 
@@ -1754,19 +1695,15 @@ input[type=submit] {
   .footer .footer-list {
     gap: 80px;
 }
+.board2 .frame p{
+  padding: 15px;
 }
-@media screen and (max-width:570px) {
-  .board2 .frame p{
-    padding: 15px;
-  }
 }
+
 @media screen and (max-width:553px) {
   .board-list{
     grid-template-columns: 1fr;
     justify-content: center;
-  }
-  .written-section h1{
-    font-size: 43px;
   }
   .expertise-area h2{
     font-size: 43px;
@@ -1811,7 +1748,7 @@ input[type=submit] {
     
   }
   .written-section h1{
-    font-size: 42px;
+    font-size: 40px;
   }
   .expertise-area h2{
     font-size: 42px;
@@ -1848,20 +1785,10 @@ input[type=submit] {
   }
 
 }
-@media screen and (max-width:515px) {
-  .top-section{
-    max-height: 755px;
-  }
-}
-@media screen and (max-width:513px) {
-  .top-section{
-    max-height: 800px;
-  }
-}
 @media screen and (max-width:502px) {
-.vision-board a {
+.vision-dsc a {
   padding: 20px 40px;
-font-size: 12px;
+  font-size: 12px;
 }
 input[type=submit] {
   padding: 20px 40px;
@@ -1870,9 +1797,7 @@ input[type=submit] {
 .vision-board .solutions p {
   margin-bottom: 40px;
 }
-  .vision-board .vision-board-list .solutions .vision-img {
-    margin-right: 0px;
-}
+
 .people-feedback .people-feedback-list .sucess {
   display: flex;
   flex-direction: column;
@@ -1881,9 +1806,6 @@ input[type=submit] {
   margin-left: auto;
   margin-right: auto;
   padding-right: 0;
-}
-.vision-board .vision-board-list .solutions .vision-img {
-  margin-bottom: 20px;
 }
 .people-feedback .people-feedback-list .feedback-list {
   padding-bottom: 50px;
@@ -1896,6 +1818,9 @@ input[type=submit] {
 }
 .people-feedback-list .sucess .dsc {
   width: 100%;
+}
+.written-section h1{
+  font-size: 35px;
 }
 }
 @media screen and (max-width:488px) {
@@ -1910,15 +1835,8 @@ input[type=submit] {
 
 }
 
-@media screen and (max-width:464px) {
-    .vision-board .vision-board-list .solutions .vision-img {
-      margin-right: 0;
-  }
-  }
+
   @media screen and (max-width:464px) {
-    .vision-board .vision-board-list .solutions .vision-img {
-      margin-right: 20px;
-  }
   .contact-us{
     margin-top: 504px;
   }
@@ -1967,15 +1885,10 @@ input[type=submit] {
   }
 }
 
-@media screen and (max-width:379px) {
-  /* .contact-us {
-  margin-top: 388px;
-  } */
+@media screen and (max-width:375px) {
   .board .hero img {
     max-width: 280px;
   }
-}
-@media screen and (max-width:375px) {
   .work-board .container {
     padding-top: 260px;
   }
@@ -2008,7 +1921,7 @@ input[type=submit] {
     max-width: 260px;
   }
 }
-@media screen and (min-width:898px) {
+@media screen and (min-width:897px) {
 .work-board .work-board-list .work-list{
   height: 100%;
 }
@@ -2019,5 +1932,4 @@ input[type=submit] {
     max-height:537px;
     margin-top: 45px;
   }
-  
-  }
+}
