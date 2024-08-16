@@ -369,6 +369,9 @@
 font-family: "Gabarito", sans-serif;
 }
 
+body>div{
+  overflow: hidden;
+}
 .container{
     max-width: 1200px;
     margin-left: auto;
@@ -1013,6 +1016,10 @@ label{
   .board .hero img{
     margin-top: 60px;
   }
+  .mid-section .mid-section-list{
+    justify-content: center;
+    gap:70px;
+    }
 }
 @media screen and (max-width:1210px) {
   .top-section-list .nav-bar {
@@ -1028,9 +1035,7 @@ label{
     .written-section .round-btn{
       font-size: 16px;
     }
-    .mid-section .mid-section-list{
-      justify-content: center;
-    }
+    
     .mid-section .mid-section-list img{
       width: 25%;
       align-items: center;
@@ -1083,6 +1088,24 @@ label{
   .footer p{
     font-size: 13px; 
   }
+  .board .hero .floating-content{
+
+    margin-top: -12px;
+    margin-left: -29px;
+}
+  .board .floating-content h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .board .floating-content p{
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .board .hero .floating-content img{
+    max-width: 160px;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -1107,6 +1130,24 @@ label{
 .board .hero img {
 margin-top: 82px;
 max-width: 495px;
+
+}
+.board .hero .floating-content{
+
+  margin-top: 3px;
+  margin-left: -28px;
+}
+.board .floating-content h3{
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.board .floating-content p{
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.board .hero .floating-content img{
+  max-width: 140px;
 }
 }
 
@@ -1441,21 +1482,24 @@ input[type=submit] {
       margin-bottom: 10px;
     }
     .nav-bar .display-on-pc{
-      display: none;
+      display: block;
     }
     
      .nav-bar .primary-nav{
       position: absolute;
       margin: 0;
-      padding: 70px;
+      padding: 40px;
       background-color: #343232;
       flex-direction: column;
       height: auto;
       z-index: 2;
       right: 15px;
-      top: 112px;
+      top: -500px;
       border-radius: 10px;
-      opacity: 0.99;
+      opacity: 0;
+      transition: all 03s ease-in-out;
+      visibility: hidden;
+      pointer-events: non;
      }
      
      .nav-bar .primary-nav li a{
@@ -1469,15 +1513,19 @@ input[type=submit] {
       .nav-bar.open .primary-nav{
       display: block;
       /* display: flex; */
+      top: 112px;
+      opacity: 1;
+      visibility: visible;
     }
     .top-section-list span{
       color: black;
     }
     .mob-menu.open .icon-bars:before{
       content: "\e900";
+      font-size: 27px;
     }
     .nav-bar.open .primary-nav li{
-      margin-bottom: 40px;
+      margin-bottom: 25px;
      }
      .nav-bar.open .primary-nav li:last-child{
       margin-bottom: 0;
@@ -1572,6 +1620,23 @@ input[type=submit] {
   }
   .mid-section-list {
     gap: 50px;
+  }
+  .board .hero .floating-content{
+    margin-top: 11px;
+    margin-left: -20px;
+    padding: 13px;
+  }
+  .board .floating-content h3{
+    font-size: 17px;
+    margin-bottom: 7px;
+    margin-top: 0;
+  }
+  .board .floating-content p{
+    font-size: 11px;
+    margin-bottom: 7px;
+  }
+  .board .hero .floating-content img{
+    max-width: 120px;
   }
 }
 @media screen and (max-width:691px) {
@@ -1677,6 +1742,23 @@ input[type=submit] {
     margin-top: 60px;
     margin-bottom: 70px;
 }
+.board .hero .floating-content{
+  margin-top: 11px;
+  margin-left: -20px;
+  padding: 12px;
+}
+.board .floating-content h3{
+  font-size: 16px;
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+.board .floating-content p{
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+.board .hero .floating-content img{
+  max-width: 100px;
+}
   }
 
 @media screen and (max-width:579px) {
@@ -1744,7 +1826,7 @@ input[type=submit] {
     font-size: 40px;
   }
   .mid-section-list {
-    gap: 40px;
+    gap: 30px;
   }
   .board2 .frame p{
   padding: 13px;
