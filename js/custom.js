@@ -6,5 +6,9 @@ $(document).ready(function () {
                 $('.nav-bar').toggleClass('open');
                 $('.mob-menu').toggleClass('open');
             })
+
+        $('.go-to-top-btn a').on('click',function(){
+                $('html, body').animate({scrollTop:0}, 'slow');
+        })
 })
 

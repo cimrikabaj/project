@@ -553,7 +553,7 @@ span{
   font-size: 64px;
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 2px;
 }
 .expertise-area p{
   font-weight: 400;
@@ -566,11 +566,13 @@ span{
 
 /* -----------------------vision-board-------------- */
 .vision-board{
-  margin-bottom: 72px;
+  margin-bottom: 42px;
 }
 .vision-board-list{
   display: flex;
   gap: 56px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 .vision-dsc a{
   padding: 25px 60px;
@@ -1000,6 +1002,27 @@ label{
 /* select{
   background-color:  var(--color-primary);
 } */
+
+/* ---------------scroll-up----------------------- */
+ 
+.go-to-top-btn a{
+  position: fixed;
+  background-color: #171515;
+  bottom: 10px;
+  right: 19px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url('../image/arrow-up.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.go-to-top-btn a:hover{
+    background-color: var(--color-primary);
+}
 
 
 /* --------------------CSS responsive design-------------- */
@@ -1497,7 +1520,7 @@ input[type=submit] {
       top: -500px;
       border-radius: 10px;
       opacity: 0;
-      transition: all 03s ease-in-out;
+      transition: all 0.3s ease-in-out;
       visibility: hidden;
       pointer-events: non;
      }
@@ -1511,11 +1534,10 @@ input[type=submit] {
         color: var(--color-primary);
      }
       .nav-bar.open .primary-nav{
-      display: block;
-      /* display: flex; */
       top: 112px;
       opacity: 1;
       visibility: visible;
+      pointer-events: initial;
     }
     .top-section-list span{
       color: black;
@@ -1582,6 +1604,12 @@ input[type=submit] {
 .top-section-list .logo{
   width: 20%;
 }
+  .board2 .display-on-mobile{
+    display: block;
+  }
+  .board2 .display-on-pc{
+    display: none;
+  }
   }
 
 
@@ -1598,9 +1626,7 @@ input[type=submit] {
   .expertise-area h2{
     font-size: 58px;
   }
-  /* .work-board .work-board-head h2{
-    font-size: 58px;
-  } */
+  
   .board2 h2{
     font-size: 58px;
   }
@@ -1637,6 +1663,9 @@ input[type=submit] {
   }
   .board .hero .floating-content img{
     max-width: 120px;
+  }
+  .work-board .work-board-head h2{
+    font-size: 52px;
   }
 }
 @media screen and (max-width:691px) {
@@ -1711,7 +1740,7 @@ input[type=submit] {
 
 .vision-board .vision-board-list .solutions {
   flex-direction: column;
-  gap: 25px;
+  gap: 5px;
 }
 .work-board .work-board-list{
   margin-top: 32px;
