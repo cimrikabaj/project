@@ -7,7 +7,7 @@ $(document).ready(function () {
                 $('.mob-menu').toggleClass('open');
             })
 
-        $('.go-to-top-btn a').on('click',function(){
+        $('.go-to-top-btn').on('click',function(){
                 $('html, body').animate({scrollTop:0}, 'slow');
         })
 })

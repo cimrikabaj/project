@@ -391,6 +391,8 @@ img{
   font-weight: 300;
   box-shadow: 0px 6px 20px rgba(0,0,0,0.25) ;
   transition: all 0.25s ease-in-out;
+  line-height: 1;
+  display: inline-block;
 }
 
 .round-btn:hover{
@@ -462,6 +464,10 @@ img{
 .nav-bar li a{
   font-size: 18px;
   font-weight: 500;
+}
+
+.menu-toggle-btn{
+  cursor: pointer;
 }
 
 /* ---------------------BOARD---------------------- */
@@ -621,6 +627,7 @@ span{
   font-weight: 600;
   margin-top: 0;
   text-align: left;
+  line-height: 1;
 }
 .board-list .box ul{
   margin: 0;
@@ -725,6 +732,7 @@ span{
 .work-board-list .work-list h3{
   font-size: 26px;
   font-weight: 600;
+  line-height: 1;
 }
 .work-board-list .work-list p{
   font-size: 18px;
@@ -1004,23 +1012,24 @@ label{
 } */
 
 /* ---------------scroll-up----------------------- */
- 
-.go-to-top-btn a{
+
+.go-to-top-btn{
   position: fixed;
   background-color: #171515;
   bottom: 10px;
   right: 19px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-image: url('../image/arrow-up.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 18px;
+  background-size: 22px;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.go-to-top-btn a:hover{
+.go-to-top-btn:hover{
     background-color: var(--color-primary);
 }
 
@@ -1522,13 +1531,13 @@ input[type=submit] {
       opacity: 0;
       transition: all 0.3s ease-in-out;
       visibility: hidden;
-      pointer-events: non;
+      pointer-events: none;
      }
      
      .nav-bar .primary-nav li a{
       color: #fff;
-      margin-bottom: 100px;
-      font-size: 25px;
+      font-size: 21px;
+      display: block;
      }
      .nav-bar .primary-nav li a:hover{
         color: var(--color-primary);
@@ -1538,6 +1547,8 @@ input[type=submit] {
       opacity: 1;
       visibility: visible;
       pointer-events: initial;
+      gap: 25px;
+      padding: 25px;
     }
     .top-section-list span{
       color: black;
@@ -1546,9 +1557,7 @@ input[type=submit] {
       content: "\e900";
       font-size: 27px;
     }
-    .nav-bar.open .primary-nav li{
-      margin-bottom: 25px;
-     }
+    
      .nav-bar.open .primary-nav li:last-child{
       margin-bottom: 0;
      }
