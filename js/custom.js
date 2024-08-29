@@ -7,8 +7,26 @@ $(document).ready(function () {
                 $('.mob-menu').toggleClass('open');
             })
 
-        $('.go-to-top-btn').on('click',function(){
-                $('html, body').animate({scrollTop:0}, 'slow');
-        })
+            var goTopBtn = $(".go-to-top-btn");
+        var scrollThreshold = 100; 
+        
+
+        $(window).scroll(function () {
+            var scrollPosition = $(window).scrollTop();
+
+        
+            if (scrollPosition > scrollThreshold) {
+                goTopBtn.addClass("show");
+            } else {
+                goTopBtn.removeClass("show");
+            }
+        });
+
+       
+        $('.go-to-top-btn').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+            
 })
 
