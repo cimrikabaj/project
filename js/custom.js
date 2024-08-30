@@ -8,7 +8,7 @@ $(document).ready(function () {
             })
 
             var goTopBtn = $(".go-to-top-btn");
-        var scrollThreshold = 100; 
+            var scrollThreshold = 100; 
         
 
         $(window).scroll(function () {

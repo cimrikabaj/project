@@ -369,7 +369,30 @@
 font-family: "Gabarito", sans-serif;
 }
 
-body>div{
+/* body>div{
+  overflow: hidden;
+} */
+
+.mid-section>div{
+  overflow: hidden;
+}
+
+.expertise-area>div{
+  overflow: hidden;
+}
+.vision-board>div{
+  overflow: hidden;
+}
+.work-board>div{
+  overflow: hidden;
+}
+.board2>div{
+  overflow: hidden;
+}
+.people-feedback>div{
+  overflow: hidden;
+}
+.contact-us>div{
   overflow: hidden;
 }
 
@@ -474,14 +497,16 @@ img{
 }
 
 /* ---------------------BOARD---------------------- */
+
 .board{
-  display: flex;
-  position: relative;
-  margin-top: 95px;
   background-color: #F5F5F5;
   background-size: contain;
 }
-
+.board .board-section{
+  display: flex;
+  position: relative;
+  margin-top: 95px;
+}
 .written-section h1{
   font-weight: 500;
   font-size: 64px;
@@ -1245,17 +1270,17 @@ font-size: 12px;
 /* .board .hero .floating-content img{
   max-width: 127;
 } */
-}
-
-
-@media screen and (max-width:1038px) {
-
-.board{
+.board-section{
   flex-direction: column;
 }
 .board .written-section{
   text-align: center;
 }
+}
+
+
+@media screen and (max-width:1038px) {
+
 .top-section{
   max-height: 980px;
 }
@@ -1768,6 +1793,9 @@ input[type=submit] {
 .footer p {
   margin: 0;
 }
+.people-feedback .people-feedback-list .feedback-list {
+  padding-left: 0;
+}
 }
 
 
@@ -1832,13 +1860,10 @@ input[type=submit] {
 }
 
 @media screen and (max-width:553px) {
-  .board-list{
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
+  
   .board .hero img {
     max-width: 332px;
-  margin-top: 68px;
+    margin-top: 68px;
   }
   .work-board .work-board-list .work-list {
   width: 100%;
@@ -1932,6 +1957,10 @@ input[type=submit] {
 }
 .contact-us .contact-us-list .contact-info .first-info {
   width: 100%;
+}
+.board-list{
+  grid-template-columns: 1fr;
+  justify-content: center;
 }
 }
 
